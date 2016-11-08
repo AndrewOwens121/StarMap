@@ -41,5 +41,14 @@ void drawGrid(){
 
 void printStars(){
   
-  
+  for (int i=0;i<table.getRowCount();i++){ //loops through entire list of stars
+    x=
+    y=
+    stroke(255,0,0);
+    noFill();
+    ellipse(400,400,20,20); //replace the 400's with x,y values of stars
+    line(400-5,400,400+5,400);
+    line(400,400-5,400,400+5);
+    
+  }
 }
