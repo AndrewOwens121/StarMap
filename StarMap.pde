@@ -9,6 +9,7 @@ void setup()
   background(0);
   star_arraylist = new ArrayList<Star>();
   loadData();//called in Setup as only needs to be loaded once
+  println(table.getString(4, "Display Name")); 
 }
 
 void draw()
@@ -42,8 +43,8 @@ void drawGrid(){
 void printStars(){
   
   for (int i=0;i<table.getRowCount();i++){ //loops through entire list of stars
-    x=
-    y=
+   //x=table.getString(i, "DisplayName"));  --ran out of time here :(
+   //y=
     stroke(255,0,0);
     noFill();
     ellipse(400,400,20,20); //replace the 400's with x,y values of stars
